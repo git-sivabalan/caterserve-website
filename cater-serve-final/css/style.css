@@ -1,0 +1,507 @@
+.navbar {
+    margin-top: -20px;
+
+}
+
+.nav-bar {
+    padding: 20px;
+    background-color: #f4e7d4;
+}
+
+.nav-item {
+    padding-left: 10px;
+}
+
+.dropdown-menu {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    display: block !important;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width: 576px) {
+    .home-slide.welcome-bar {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .offset-xl-1 {
+        margin-left: 7% !important;
+    }
+
+    .book-now-btn {
+        visibility: hidden;
+    }
+}
+
+.font-style-2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.btn.book {
+    background-color: #d4a762;
+    color: black;
+    font-weight: 500;
+}
+
+.btn.book:hover {
+    background-color: black;
+    color: #f4e7d4;
+}
+
+.welcome-bar {
+    border: #bd8c44 2px solid !important;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.experience .experience-card {
+    border: none;
+    background: #d4a762;
+}
+
+.services .service-card {
+    background: none;
+    cursor: pointer;
+
+}
+
+.card-btn:hover .btn {
+    background-color: black;
+    color: white;
+}
+
+.card-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to bottom, #d4a762, #d4a762);
+    transition: height 1s ease;
+    z-index: -1;
+}
+
+.card-btn .fas {
+    color: #bd8c44 !important;
+}
+
+.card-btn:hover .fas {
+    color: black !important;
+}
+
+.card-btn:hover::before {
+    height: 100%;
+}
+
+.card-btn .btn {
+    background-color: #d4a762;
+    color: black;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+.card-btn:hover .btn {
+    background-color: white;
+    color: black;
+}
+
+.card-body .btn:hover {
+    background-color: black;
+    color: #d4a762;
+}
+
+.event {
+    border: 2px solid;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.latest-events .btn {
+    background-color: #d4a762;
+}
+
+.latest-events .btn:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.card-image-title {
+    display: flex;
+    visibility: hidden;
+
+}
+
+.latest-card:hover .card-image-title {
+    visibility: visible;
+}
+
+.latest-card:hover .fa-search-plus {
+    visibility: visible;
+}
+
+
+.card-img-overlay {
+    background-color: rgba(233, 165, 87, 0.7);
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
+}
+
+.latest-card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+
+.latest-card:hover {
+    cursor: pointer;
+}
+
+.experience {
+    margin-top: 20% !important;
+}
+
+.services {
+    padding-top: 20%;
+}
+
+.menu {
+    padding-top: 20%;
+}
+
+.menu .btn {
+    background-color: #d4a762;
+}
+
+.menu .btn:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.latest-events{
+    padding-top: 10%;
+}
+.menu img{
+    border-radius: 50%;
+}
+.dollar{
+    color:#d4a762 ;
+}
+.a-link{
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.card-img{
+    position: relative;
+}
+.c-icons{
+    align-items: end;
+    justify-content: end;
+    margin-left: 82%;
+    margin-top: 5%;
+}
+.c-icons .share-link{
+    margin-top: 20%;
+}
+
+/* xl */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .share-link.btn {
+    width: 2em; 
+    height: auto; 
+    margin-right: 20%;
+}
+
+.share-link.btn i {
+    font-size: 12px; 
+}
+}
+.facebook, .instagram, .twitter {
+    opacity: 0;
+    transition: opacity 0.5s ease 0.5s;
+}
+.team-card-body h2{
+    color: #d4a762;
+}
+.each-card:hover .facebook,
+.each-card:hover .instagram,
+.each-card:hover .twitter {
+    opacity: 1;
+    transition: opacity 1s ease 0s;
+}
+
+.card:hover .team-card-body {
+    background-color: #d4a762 !important;
+}
+.card:hover .team-card-body h2{
+    color: black !important;
+}
+
+.team-card-body {
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+/* Animations */
+@keyframes slide-left {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-right {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-up {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-down {
+    from {
+        transform: translateY(300px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-90px);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    60%{
+        transform: translateY(-30px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+
+.blog-image{
+    transition: transform 0.3s ease-in-out;
+    z-index: -1px;
+}
+
+.blog-image:hover {
+    transform: scale(1.2);
+}
+.b-content {
+    margin-top: -10%;
+}
+.blog-link{
+    background-color: #fff;
+    text-decoration: none;
+    z-index: 1;
+}
+.blog-date{
+    z-index: 1;
+}
+
+
+@media screen and (max-width:321px) {
+    .home .welcome-bar-text{
+        width: 100%;
+        text-align: center;
+    }
+    .home .home-headding{
+        font-size: 40px !important;
+    }
+    .about-us .about-us-bar-text{
+        width: 100%;
+        text-align: center;
+    }
+    .experience .video-container img{
+        margin-left: -10%;
+    }
+    .content-title{
+        font-size: 25px !important;
+    }
+    .book-us-content{
+        font-size: 20px !important;
+    }
+    .latest-events .latest-event-cards{
+        margin-left: 0%;
+    }
+    .menu .our-menu-btn{
+        font-size: 12px;
+    }
+    .menu .content-title{
+        display: flex;
+        justify-content: end;
+    }
+    .menu .menu-btn{
+        margin-left: 0%;
+    }
+    .menu-details h3{
+        font-size: 20px !important;
+    }
+    .menu-details p{
+        font-size: 15px !important;
+    }
+    .menu-details img{
+        margin-top: -100%;
+    }
+    .our-team .our-team-headings{
+        margin-left: 10%;
+    }
+    .blog .blog-cards a{
+        font-size: 15px;
+    }
+    .share-link{
+        margin-right: 25%;
+    }
+}
+@media screen and (min-width:321px) and (max-width:376px){
+    .home .welcome-bar-text{
+        width: 100%;
+        text-align: center;
+    }
+    .home .home-headding{
+        font-size: 40px !important;
+    }
+    .about-us .about-us-bar-text{
+        width: 100%;
+        text-align: center;
+    }
+    .experience .video-container img{
+        margin-left: -8%;
+    }
+    .latest-events .latest-event-cards{
+        margin-left: 0%;
+    }
+    .menu .content-title{
+        display: flex;
+        justify-content: end;
+        font-size: 25px;
+    }
+    .menu .menu-btn{
+        margin-left: 0%;
+    }
+    .menu-details h3{
+        font-size: 20px !important;
+    }
+    .menu-details p{
+        font-size: 15px !important;
+    }
+    .menu-details img{
+        margin-top: -80%;
+    }
+    .book-us-content{
+        font-size: 20px !important;
+    }
+    .book-us img{
+        visibility: hidden;
+    }
+    .our-team .our-team-headings{
+        margin-left: 9%;
+    }
+    .blog .blog-cards a{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:377px) and (max-width:436px){
+    .home .welcome-bar-text{
+        width: 100%;
+        text-align: center;
+    }
+    .home .home-headding{
+        font-size: 40px !important;
+    }
+    .about-us .about-us-bar-text{
+        width: 100%;
+        text-align: center;
+    }
+    .experience .video-container img{
+        margin-left: -8%;
+    }
+    .latest-events .latest-event-cards{
+        margin-left: 0%;
+    }
+    .menu .content-title{
+        display: flex;
+        justify-content: end;
+        font-size: 25px;
+    }
+    .menu .menu-btn{
+        margin-left: 0%;
+    }
+    .menu-details h3{
+        font-size: 20px !important;
+    }
+    .menu-details p{
+        font-size: 15px !important;
+    }
+    .menu-details img{
+        margin-top: -30%;
+    }
+    .our-team .our-team-headings{
+        margin-left: 9%;
+    }
+    .blog .blog-cards a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px){
+    .share-link{
+        margin-right: 25%;
+    }
+}
